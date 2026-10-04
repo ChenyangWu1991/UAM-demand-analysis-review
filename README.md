@@ -1,6 +1,6 @@
-# TRB Submission Files
+# Figure generation
 
-This folder contains the data workbooks, Python scripts, and figure outputs prepared for the TRB paper submission.
+This folder contains the data workbooks and Python scripts which generate the final figures in the paper.
 
 ## Main Figure Script
 
@@ -139,14 +139,3 @@ The existing `odd_ratio.py` script reads this workbook and generates `Odd.svg`. 
 ### Socio-demographic and attitudinal factors.xlsx
 
 This workbook records the numbers of papers covering socio-demographic factors, travel habits, and safety, together with the reported direction of their effects on UAM acceptance. Its worksheets contain information for factors such as age, gender, income, employment, education, safety, vehicle ownership, air-travel frequency, current travel patterns, and other travel habits.
-
-## Figure and Data Conventions
-
-- A bar represents a value range, while a point represents a single value.
-- All nine figures use the same physical bar width and point size.
-- Adjacent bars do not overlap.
-- The figures do not contain titles.
-- The y-axis, legends, plot borders, and broken-axis settings follow the final figure format.
-- SVG text remains editable rather than being converted to vector paths.
-- Arial is used when it is installed. The script falls back to DejaVu Sans or Liberation Sans when Arial is unavailable.
-- Do not rename the input worksheets or key columns such as `Author`, `Year`, `Use`, `Min`, and `Max` unless the corresponding definitions in the Python script are also updated.
