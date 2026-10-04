@@ -1,0 +1,11 @@
+# This repository intentionally contains only the plotting scripts and source workbooks.
+*
+
+# Keep the ignore rules themselves.
+!/.gitignore
+
+# Track Python plotting scripts in the repository root.
+!/*.py
+
+# Track Excel workbooks used as plotting inputs in the repository root.
+!/*.xlsx
