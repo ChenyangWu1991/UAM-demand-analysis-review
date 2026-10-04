@@ -4,6 +4,9 @@
 # Keep the ignore rules themselves.
 !/.gitignore
 
+# Keep the repository documentation.
+!/README.md
+
 # Track Python plotting scripts in the repository root.
 !/*.py
 
