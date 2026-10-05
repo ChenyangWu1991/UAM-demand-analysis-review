@@ -68,13 +68,18 @@ The main figure script requires:
 
 ### Create a virtual environment
 
-Open PowerShell and run:
+Open PowerShell in the repository folder—the folder containing this `README.md`, the Python scripts, and the Excel workbooks—and run:
 
 ```powershell
-cd "D:\python_project\TRB\Submit"
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
+```
+
+The repository can be stored anywhere on the computer. If PowerShell is opened in another folder, navigate to the downloaded or cloned repository first, replacing the example path with its actual location:
+
+```powershell
+Set-Location "path\to\UAM-demand-analysis-review"
 ```
 
 If PowerShell prevents activation, the execution policy can be changed for the current session only:
@@ -100,7 +105,7 @@ python -m pip install matplotlib numpy openpyxl pandas
 
 ## Running the Main Figure Script
 
-From the `Submit` folder, run:
+From the repository folder, run:
 
 ```powershell
 python supply_demand_figures.py
@@ -109,13 +114,13 @@ python supply_demand_figures.py
 The default output location is:
 
 ```text
-Submit\final_figures
+.\final_figures
 ```
 
 To use a different output folder, run:
 
 ```powershell
-python supply_demand_figures.py --output-dir "D:\output\TRB_figures"
+python supply_demand_figures.py --output-dir ".\custom_figures"
 ```
 
 The input paths are resolved relative to `supply_demand_figures.py`, so the script can also be launched from another working directory.
